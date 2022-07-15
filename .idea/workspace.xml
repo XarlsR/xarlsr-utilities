@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.0&#10;Añadida generación de fechas aleatorias en DateUtils.&#10;Añadida conversión de Date a String mediante dateToString(localDate) y dateToString(localDate, pattern)." />
+    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.0&#10;English translated.">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -30,7 +39,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2BDKe1RjtvtFH2egE5ywYJWUF2S" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -45,6 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -59,6 +69,20 @@
       <command value="mvn install:install C:\Java\Proyectos\Utilidades\xarlsr-utilidades-2.0.0\target\xarlsr-utilidades-2.1.0-javadoc.jar" />
       <command value="mvn javadoc:jar" />
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Java Scratch.Scratch" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657031093016</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version 2.3.0&#10;English translated.">
+      <created>1657138023895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657138023895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +139,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Version 2.2.0&#10;Añadida generación de fechas aleatorias en DateUtils" />
     <MESSAGE value="Version 2.3.0&#10;Añadida generación de fechas aleatorias en DateUtils.&#10;Añadida conversión de Date a String mediante dateToString(localDate) y dateToString(localDate, pattern)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.0&#10;Añadida generación de fechas aleatorias en DateUtils.&#10;Añadida conversión de Date a String mediante dateToString(localDate) y dateToString(localDate, pattern)." />
+    <MESSAGE value="Version 2.3.0&#10;English translated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.0&#10;English translated." />
   </component>
 </project>

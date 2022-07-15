@@ -130,20 +130,15 @@ public class DateUtils {
 	 * @since Version 2.1.0
 	 */
 	public static boolean isValidDate (String date){
-
-		boolean valid = false;
+		DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern(BNK)
+				.withResolverStyle(ResolverStyle.STRICT);;
 		try {
-			// ResolverStyle.STRICT for 30, 31 days checking, and also leap year.
-			LocalDate.parse(date,
-					DateTimeFormatter.ofPattern("yyyyMMdd")
-							.withResolverStyle(ResolverStyle.STRICT)
-			);
-			valid = true;
+			dtFormatter.parse(date);
 		} catch (DateTimeParseException e) {
 			e.printStackTrace();
-			valid = false;
+			return false;
 		}
-		return valid;
+		return true;
 	}
 
 	/**
