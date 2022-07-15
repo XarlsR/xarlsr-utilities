@@ -47,35 +47,38 @@ public class DateUtils {
 	 * Converts a string representing a date into a LocalDate object containing that date.
 	 * Conversion between date formats is supported via parameters.
 	 * @param dateString String with the date to convert.
-	 * @param inputFormat String with the input format of the string date. A custom user defined
-	 *                    can be user or one of the built-in formats.
-	 * @param outputFormat String with the output format of the string date. A custom user defined
-	 * 	 *                 can be user or one of the built-in formats.
+	 * @param inputFormat String with the input format of the string date. A custom user defined can be user or one of the built-in formats.
 	 * @return LocalDate object with converted date.
-	 * @since 2.0.0
+	 * @since 2.3.3
 	 */
-	public static LocalDate stringToDate(String dateString, String inputFormat, String outputFormat) {
-		String dateFormatted = dateFormatChanger(dateString, inputFormat, outputFormat);
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(outputFormat);
-		// parsing the string to convert it into date
-		LocalDate lDate = LocalDate.parse(dateFormatted, dtf);
-		return lDate;
+	public static LocalDate stringToDate(String dateString, String inputFormat) throws DateTimeParseException {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(inputFormat);
+		DateTimeFormatter errdtf = DateTimeFormatter.BASIC_ISO_DATE;
+		try {
+			LocalDate lDate = LocalDate.parse(dateString, dtf);
+			return lDate;
+		} catch (DateTimeParseException e) {
+			System.out.println("The entered date is not valid or doesn't match the input format");
+		}
+		return LocalDate.parse("19000101", errdtf);
 	}
 	
 	/**
-	 * Converts a String representing a date with predefined  "ddMMyyyy" format in an object LocalDate
-	 * containing that date with the output format "yyyy-MM-dd", via the aux method
-	 * 'dateFormatter()'.
+	 * Converts a String representing a date with predefined BASIC_ISO_DATE "yyyyMMdd"
+	 * format in an object LocalDate containing that date.
 	 * @param dateString String with the date to convert.
 	 * @return LocalDate object with the converted date.
-	 * @since 2.0.0
+	 * @since 2.3.3
 	 */
 	public static LocalDate stringToDate(String dateString) {
-		String dateFormatted = dateFormatChanger(dateString, BNK, USA);
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(USA);
-		// parsing the string to convert it into date
-		LocalDate lDate = LocalDate.parse(dateFormatted, dtf);
-		return lDate;
+		DateTimeFormatter dtf = DateTimeFormatter.BASIC_ISO_DATE;
+		try {
+			LocalDate lDate = LocalDate.parse(dateString, dtf);
+			return lDate;
+		} catch (DateTimeParseException e) {
+			System.out.println("The entered date is not valid or doesn't match the input format");
+		}
+		return LocalDate.parse("19000101", dtf);
 	}
 
 	/** Converts a LocalDate date object in a String object with custom format,
@@ -123,19 +126,19 @@ public class DateUtils {
 	}
 
 	/**
-	 * Checks if a date is valid or not..
-	 * Picked up from https://mkyong.com/java/how-to-check-if-date-is-valid-in-java/
-	 * @param date String representing the date to check. It must stick the "yyyyMMdd" format.
+	 * Checks if a String representing a strDate is valid or not..
+	 * @param strDate String representing the strDate to check. It must stick the "yyyyMMdd" format (BASIC_ISO_DATE).
 	 * @return True or false
 	 * @since Version 2.1.0
 	 */
-	public static boolean isValidDate (String date){
-		DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern(BNK)
+	public static boolean isValidDate (String strDate) throws DateTimeParseException{
+		DateTimeFormatter dtFormatter = DateTimeFormatter.BASIC_ISO_DATE
 				.withResolverStyle(ResolverStyle.STRICT);;
 		try {
-			dtFormatter.parse(date);
+			LocalDate ld = LocalDate.parse(strDate, dtFormatter);
+			System.out.println();
 		} catch (DateTimeParseException e) {
-			e.printStackTrace();
+			System.out.println("The entered date is not valid");
 			return false;
 		}
 		return true;
@@ -153,9 +156,7 @@ public class DateUtils {
 		long startEpochDay = startInclusive.toEpochDay();
 		long endEpochDay = endInclusive.toEpochDay();
 		long randomDay = ThreadLocalRandom.current().nextLong(startEpochDay, endEpochDay + 1);
-		System.out.println(startEpochDay);
-		System.out.println(endEpochDay);
-		System.out.println(randomDay);
+		//System.out.println(randomDay);
 		return LocalDate.ofEpochDay(randomDay);
 	}
 

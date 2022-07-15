@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.0&#10;English translated.">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.1&#10;Fixed isValidDate() method at DateUtils class.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xarlsr/utilidades/entradaTecladoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xarlsr/utilidades/leeCadenaTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,13 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -55,11 +65,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dev.xarlsr.utilities" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -70,17 +90,93 @@
       <command value="mvn javadoc:jar" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_7.java" />
+  <component name="RunManager" selected="JUnit.DateUtilsTest">
+    <configuration name="DateUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateUtilsTest.generateRandomDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
+      <option name="METHOD_NAME" value="generateRandomDateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateUtilsTest.stringToDateNoParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
+      <option name="METHOD_NAME" value="stringToDateNoParamsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateUtilsTest.stringToDateParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
+      <option name="METHOD_NAME" value="stringToDateParamsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateUtilsTest.stringToDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
+      <option name="METHOD_NAME" value="stringToDateTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="JUnit.DateUtilsTest" />
+        <item itemvalue="JUnit.DateUtilsTest.generateRandomDateTest" />
+        <item itemvalue="JUnit.DateUtilsTest.stringToDateNoParamsTest" />
+        <item itemvalue="JUnit.DateUtilsTest.stringToDateParamsTest" />
+        <item itemvalue="JUnit.DateUtilsTest.stringToDateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657138023895</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Version 2.3.1&#10;Fixed isValidDate() method at DateUtils class.">
+      <created>1657862664689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657862664689</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +243,7 @@
     <MESSAGE value="Version 2.2.0&#10;Añadida generación de fechas aleatorias en DateUtils" />
     <MESSAGE value="Version 2.3.0&#10;Añadida generación de fechas aleatorias en DateUtils.&#10;Añadida conversión de Date a String mediante dateToString(localDate) y dateToString(localDate, pattern)." />
     <MESSAGE value="Version 2.3.0&#10;English translated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.0&#10;English translated." />
+    <MESSAGE value="Version 2.3.1&#10;Fixed isValidDate() method at DateUtils class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.1&#10;Fixed isValidDate() method at DateUtils class." />
   </component>
 </project>
