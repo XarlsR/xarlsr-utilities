@@ -148,14 +148,14 @@ public class DateUtils {
 	 * Generates a random date between two user selected dates.
 	 * Got from https://www.baeldung.com/java-random-dates
 	 * @param startInclusive Begin of the period within the date will be generated.
-	 * @param endInclusive End of the period within the date will be generated.
+	 * @param endExclusive End of the period within the date will be generated, excluded.
 	 * @return LocalDate with the random generated date.
 	 * @since Version 2.2.0
 	 */
-	public static LocalDate generateRandomDate (LocalDate startInclusive, LocalDate endInclusive){
+	public static LocalDate generateRandomDate (LocalDate startInclusive, LocalDate endExclusive){
 		long startEpochDay = startInclusive.toEpochDay();
-		long endEpochDay = endInclusive.toEpochDay();
-		long randomDay = ThreadLocalRandom.current().nextLong(startEpochDay, endEpochDay + 1);
+		long endEpochDay = endExclusive.toEpochDay();
+		long randomDay = ThreadLocalRandom.current().nextLong(startEpochDay, endEpochDay);
 		//System.out.println(randomDay);
 		return LocalDate.ofEpochDay(randomDay);
 	}

@@ -99,10 +99,11 @@ class DateUtilsTest {
         for (int i = 1; i<=1000;i++) {
             LocalDate lDate = DateUtils.generateRandomDate(d1, d2);
             String strDate = DateUtils.dateToString(lDate);
+            System.out.print(i+" "+strDate+": ");
             assertTrue((lDate.isEqual(d1) || lDate.isAfter(d1)));
             assertTrue(lDate.isBefore(d2));
             assertTrue(GenericValidator.isDate(strDate, "yyyyMMdd", true));
-            System.out.println("genRandomDateTest() [commons-validator]: " + strDate + " ok");
+            System.out.println("genRandomDateTest() [commons-validator]:  ok");
         }
     }
 }
