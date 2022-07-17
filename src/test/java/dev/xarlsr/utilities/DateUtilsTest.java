@@ -8,8 +8,11 @@ import java.time.format.DateTimeFormatter;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DateUtilsTest {
+public class DateUtilsTest {
 
+    /**
+     *
+     */
     @Test
     void stringToDateParamsTest(){
         // Valid date with matching format
@@ -46,6 +49,9 @@ class DateUtilsTest {
         }
     }
 
+    /**
+     *
+     */
     @Test
     void stringToDateNoParamsTest(){
         String d1d = "20200216";
@@ -71,6 +77,9 @@ class DateUtilsTest {
 
     }
 
+    /**
+     *
+     */
     @Test
     void isValidDateTest() {
         // Normal year
@@ -92,6 +101,9 @@ class DateUtilsTest {
 
     }
 
+    /**
+     *
+     */
     @Test
     void generateRandomDateTest() {
         LocalDate d1 = DateUtils.stringToDate("19500101","yyyyMMdd");

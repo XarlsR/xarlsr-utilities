@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.3&#10;Re-fixed isValidDate() method at DateUtils class.&#10;stringToDate() method modified, deleting the outputFormat parameter and throwing a DateTimeParse exception.">
+    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.4&#10;Modified generateRandomDate(). The ending date is now exclusive.">
+      <change afterPath="$PROJECT_DIR$/src/site/LogoXarlsRBlanco.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/markdown/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/site.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" afterDir="false" />
     </list>
@@ -65,13 +69,16 @@
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/site" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java\Proyectos\Utilidades\xarlsr-utilities\src\site" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -229,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657914073155</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Version 2.3.4&#10;Modified generateRandomDate(). The ending date is now exclusive.">
+      <created>1657957035730</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657957035730</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +264,7 @@
     <MESSAGE value="Version 2.3.0&#10;English translated." />
     <MESSAGE value="Version 2.3.1&#10;Fixed isValidDate() method at DateUtils class." />
     <MESSAGE value="Version 2.3.3&#10;Re-fixed isValidDate() method at DateUtils class.&#10;stringToDate() method modified, deleting the outputFormat parameter and throwing a DateTimeParse exception." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.3&#10;Re-fixed isValidDate() method at DateUtils class.&#10;stringToDate() method modified, deleting the outputFormat parameter and throwing a DateTimeParse exception." />
+    <MESSAGE value="Version 2.3.4&#10;Modified generateRandomDate(). The ending date is now exclusive." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.4&#10;Modified generateRandomDate(). The ending date is now exclusive." />
   </component>
 </project>

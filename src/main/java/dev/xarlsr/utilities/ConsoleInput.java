@@ -1,4 +1,4 @@
-/*
+/**
 Apache License
 Version 2.0, January 2004
 Copyright [2022] [Carlos R. Puente (XarlsR)]
@@ -20,7 +20,7 @@ import java.util.Scanner;
 
 
 /**
- * Reads and return different data types from keyboard<br><br>
+ * Reads and return different data types from keyboard<br>
  * @author XarlsR 2022
  * @version 2.3.0
  */
@@ -29,8 +29,8 @@ public class ConsoleInput {
     static final Scanner scan = new Scanner(System.in);
 
     /**
-     * Returns a String value read from keyboard<br>
-     * @return String read from keyboard
+     * <b>Returns a <code>String</code> value read from keyboard</b><br>
+     * @return <code>String</code> read from keyboard
      * @since version 1.0
      */
     public static String readString(){
@@ -46,10 +46,11 @@ public class ConsoleInput {
     }
 
     /**
-     * Reads a String value from keyboard with the maximum length set by 'length' parameter.
-     * If the entered string is longer than 'length' then it's truncated.
-     * @param length Max length of the returned string.
-     * @return String with the read value, truncated to length if longer.
+     * <b>Reads a <code>String</code> value from keyboard with the maximum length set by <code>length</code>
+     * parameter.</b><br>
+     * If the entered line is longer than <code>length</code> then it's truncated.
+     * @param length <code>int</code> number with the max length of the returned string.
+     * @return <code>String</code> with the read value, truncated to <code>length</code> if longer.
      */
     public static String readString(int length){
         String string = "";
@@ -67,10 +68,10 @@ public class ConsoleInput {
     }
 
     /**
-     * Returns a integer (int) value read from keyboard.<br>
+     * <b>Returns a <code>int</code> value read from keyboard.</b><br>
      * Prior to returning the result, it checks whether the read string
      * is numeric or not. After verify, it parses the string to int.
-     * @return Integer (int) read from keyboard.
+     * @return Integer (<code>int</code>) read from keyboard.
      * @since version 1.0
      */
     public static int readInteger(){
@@ -95,11 +96,11 @@ public class ConsoleInput {
     }
 
     /**
-     * Returns a integer (int) number of a max length read from keyboard.
-     * The value is read as a String, then checked if it's a number, then
+     * <b>Returns a integer (<code>int</code>) number of a max length read from keyboard.</b><br>
+     * The value is read as a <code>String</code>, then checked if it's a number, then
      * truncated to the max length and finally parsed to int.
      * @param length Max length of the integer number to return.
-     * @return Integer (int) read from keyboard.
+     * @return Integer (<code>int</code>) read from keyboard.
      * @since version 1.6
      */
     public static int readInteger(int length){
@@ -128,9 +129,9 @@ public class ConsoleInput {
     }
 
     /**
-     * Returns a character (char) read from keyboard.
+     * <b>Returns a character (<code>char</code>) read from keyboard.</b><br>
      * If more than one character is entered only the first one is returned.
-     * @return character (char).
+     * @return character (<code>char</code>).
      * @since  version 1.2
      */
     public static char readChar(){
@@ -151,8 +152,8 @@ public class ConsoleInput {
     }
 
     /**
-     * Returns a double precision number (double) read from keyboard.
-     * @return Double precision (double) number read from keyboard.
+     * <b>Returns a double precision number (<code>double</code>) read from keyboard.</b><br>
+     * @return Double precision (<code>double</code>) number read from keyboard.
      * @since version 1.0
      */
     public static double readDouble(){
@@ -186,7 +187,7 @@ public class ConsoleInput {
     }
 
     /**
-     * Clears the console in Windows systems
+     * <b>Clears the console in Windows systems</b>
      * @since version 1.3
      */
     public static void clearConsole(){
@@ -201,14 +202,11 @@ public class ConsoleInput {
     }
 
     /**
-     * Asks the user to press ENTER to continue.
+     * <b>Asks the user to press ENTER to continue.</b>
      */
     public static void pressEnter() {
         System.out.print("Press ENTER to continue");
         ConsoleInput.readString();
     }
-
-
-
 
 }

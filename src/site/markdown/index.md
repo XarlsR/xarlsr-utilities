@@ -2,7 +2,7 @@
 
 ### Overview
 
-It's a library to help developers with the tasks of getting user's inputs from console and with the handling of dates.
+It's a library to help developers with the tasks of getting user's inputs from console and with the handling of dates.  
 
 It implements two classes:
 
@@ -22,7 +22,7 @@ A class containing the methods to get several types of data from the console:
 - `readInteger(int)`: Same as `readInteger()`, but it truncates the integer to the max length set by `int`.
 - `readDouble()`: Reads a line from console, check if it's a valid number and returns a `Double` value.
 - `pressEnter()`: Ask the user to press ENTER key to continue.
-  There is another method that does not get any data from console nor returns anything, but it's a helpful method when console needs to be cleared:
+There is another method that does not get any data from console nor returns anything, but it's a helpful method when console needs to be cleared:
 - `clearConsole()`: Clears the console.
 
 #### DateUtils class
@@ -37,4 +37,4 @@ A class containing several methods to handle dates.
 - `generateRandomDate(LocalDate,LocalDate)`: Generates a random date between two user selected dates.
 - `isValidDate(String)`: Checks if a String representing a strDate in `BASIC_ISO_DATE` format (yyyyMMdd) is valid or not.
 
-
+For more details visit the [javadoc site](apidocs/dev/xarlsr/utilities/package-summary.html)
