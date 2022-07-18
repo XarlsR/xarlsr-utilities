@@ -1,5 +1,16 @@
+/**
+ * Apache License
+ * Version 2.0, January 2004
+ * Copyright [2022] [Carlos R. Puente (XarlsR)]
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ */
 package dev.xarlsr.utilities;
 
+import javax.xml.parsers.ParserConfigurationException;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -10,7 +21,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 
 /**
- * Several tools for dates handling
+ * <b>Several tools for dates handling</b>
+ * @author XarlsR 2022
  */
 public class DateUtils {
 
@@ -41,8 +53,7 @@ public class DateUtils {
 	public static final Locale LOCALE_ES = new Locale("es", "ES");
 	
 
-	public DateUtils() {	}
-	
+
 	/**
 	 * <b>Converts a <code>String</code> representing a date into a <code>LocalDate</code> object containing that date.</b><br>
 	 * Conversion between date formats is supported via parameters.
@@ -52,11 +63,11 @@ public class DateUtils {
 	 * @since 2.3.3
 	 */
 	public static LocalDate stringToDate(String dateString, String inputFormat) throws DateTimeParseException {
+		// TODO  Mirar si interesa que lance la excepcion o que la maneje en el catch
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(inputFormat);
 		DateTimeFormatter errdtf = DateTimeFormatter.BASIC_ISO_DATE;
 		try {
-			LocalDate lDate = LocalDate.parse(dateString, dtf);
-			return lDate;
+			return LocalDate.parse(dateString, dtf);
 		} catch (DateTimeParseException e) {
 			System.out.println("The entered date is not valid or doesn't match the input format");
 		}
@@ -75,8 +86,7 @@ public class DateUtils {
 	public static LocalDate stringToDate(String dateString) throws DateTimeParseException {
 		DateTimeFormatter dtf = DateTimeFormatter.BASIC_ISO_DATE;
 		try {
-			LocalDate lDate = LocalDate.parse(dateString, dtf);
-			return lDate;
+			return LocalDate.parse(dateString, dtf);
 		} catch (DateTimeParseException e) {
 			System.out.println("The entered date is not valid or doesn't match the input format");
 		}
@@ -110,24 +120,27 @@ public class DateUtils {
 
 	/**
 	 * <b>Converts a String representing a date from a format to other.</b><br>
+	 * The parsing method fixes some input date mistakes, i.e. june 31th will be
+	 * parsed to july, 1st. February 29th of a non leap year will be parsed to
+	 * March, 1st.
 	 * @param inputDate <code>String</code> with the date to to convert.
 	 * @param inputFormat <code>String</code> with the input format. A built-in format
 	 *                      can be used or a user's custom one.
 	 * @param outputFormat <code>String</code> with the output format. A built-in format
 	 *                      can be used or a user's custom one.
+	 * @throws ParseException when the input date is not parseable because doesn't match the input format.
 	 * @return <code>String</code> converted to the output format.
+	 * @since v2.3.6
+	 * @see SimpleDateFormat
+	 * @see ParseException
 	 */
-	public static String dateFormatChanger (String inputDate, String inputFormat, String outputFormat){
+	public static String dateFormatChanger(String inputDate, String inputFormat, String outputFormat) throws ParseException {
 		//Defines input default format.
-		String input = inputFormat.isEmpty() ? "yyyy-MM-dd hh:mm:ss" : inputFormat;
+		String input = inputFormat.isEmpty() ? "yyyyMMdd" : inputFormat;
 		//Defines output default format.
-		String output = outputFormat.isEmpty() ? "d 'de' MMMM 'del' yyyy" : outputFormat;
-		String outputDate = inputDate;
-		try {
-			outputDate = new SimpleDateFormat(output, LOCALE_ES).format(new SimpleDateFormat(input, LOCALE_ES).parse(inputDate));
-		} catch (Exception e) {
-			System.out.println("dateFormatter(): " + e.getMessage());
-		}
+		String output = outputFormat.isEmpty() ? "yyyyMMdd" : outputFormat;
+		String outputDate;
+		outputDate = new SimpleDateFormat(output, LOCALE_ES).format(new SimpleDateFormat(input, LOCALE_ES).parse(inputDate));
 		return outputDate;
 	}
 
@@ -136,20 +149,19 @@ public class DateUtils {
 	 * @param strDate <code>String</code> representing the date to check.
 	 * It must stick the "yyyyMMdd" format (<code>BASIC_ISO_DATE</code>).
 	 * @return True or false
-	 * @throws DateTimeParseException
 	 * @since Version 2.1.0
 	 */
-	public static boolean isValidDate (String strDate) throws DateTimeParseException{
+	public static boolean isValidDate (String strDate) {
 		DateTimeFormatter dtFormatter = DateTimeFormatter.BASIC_ISO_DATE
 				.withResolverStyle(ResolverStyle.STRICT);
 		try {
 			LocalDate ld = LocalDate.parse(strDate, dtFormatter);
 			System.out.println();
+			return true;
 		} catch (DateTimeParseException e) {
 			System.out.println("The entered date is not valid");
 			return false;
 		}
-		return true;
 	}
 
 	/**
