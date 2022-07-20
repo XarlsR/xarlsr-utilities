@@ -14,6 +14,7 @@ package dev.xarlsr.utilities;
 import org.apache.commons.lang3.StringUtils;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
@@ -28,29 +29,115 @@ public class ConsoleInput {
     static final Scanner scan = new Scanner(System.in);
 
     /**
-     * <b>Returns a <code>String</code> value read from keyboard</b><br>
-     * @return <code>String</code> read from keyboard
-     * @since version 1.0
+     * <b>Reads and returns a String from a InputStream object</b><br>
+     * Injecting the InputStream object as a parameter unlinks the reading
+     * procedure (BufferedReader) of the source of the String to read, making
+     * the method more flexible and easily testable, as keyboard input can be
+     * simulated by changing the InputStream from default System.in to any other.<br>
+     * The InputStream object is passed via parameter -mandatory- and may be
+     * any of the classes of InputStream superclass.
+     * Then it's read by a BufferedReader via readLine() method.<br>
+     * If a console keyboard reading is desired, the passed parameter must be
+     * System.in or, as an option, the InputStream object must be set to System.in
+     * at the calling class or method.<br>
+     * Replaces the previous deprecated readString() method.
+     * @param inputStream InputStream object which the String will be read from.
+     * @return Read String
+     * @see InputStream
+     * @see System#in
+     * @see BufferedReader
+     * @see #readString()
+     * @author XarlsR 2022
+     * @since v2.3.7
      */
+    public static String readString(InputStream inputStream) {
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+            String string = (br.readLine());
+            inputStream.close();
+            return string;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    /**
+     * <b>Reads and returns a String from a InputStream object</b><br>
+     * Injecting the InputStream object as a parameter unlinks the reading
+     * procedure (BufferedReader) of the source of the String to read, making
+     * the method more flexible and easily testable, as keyboard input can be
+     * simulated by changing the InputStream from default System.in to any other.<br>
+     * The InputStream object is passed via parameter -mandatory- and may be
+     * any of the classes of InputStream superclass.
+     * Then it's read by a BufferedReader via readLine() method.<br> After that the length
+     * of the String is checked. If it's longer than {@code maxLength} parameter then
+     * it's truncated prior to return. If not, it's returned as is.
+     * If a console keyboard reading is desired, the passed parameter must be
+     * System.in or, as an option, the InputStream object must be set to System.in
+     * at the calling class or method.<br>
+     * Replaces the deprecated readString(int) method.
+     * @param inputStream InputStream object which the String will be read from.
+     * @return Read String
+     * @see InputStream
+     * @see System#in
+     * @see BufferedReader
+     * @see #readString(int)
+     * @author XarlsR 2022
+     * @since v2.3.7
+     */
+    public static String readString(InputStream inputStream, int maxLength){
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+            String string = (br.readLine());
+            inputStream.close();
+            if (string.length() > maxLength) {
+                return string.substring(0, maxLength);
+            }
+            else {return string;}
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    /**
+     * <b>Deprecated version of the readString() method.</b><br>
+     * Returns a String read from keyboard (System.in).<br>
+     * Replaced by readString(InputReader) method in version 2.3.7
+     * @return String read from keyboard
+     * @since version 1.0.0
+     * @deprecated
+     * @see #readString(InputStream)
+     */
+    @Deprecated
     public static String readString(){
-        String string = "";
+        String string="";
         BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
         try{
             string = buff.readLine();
         }
-        catch (Exception e){
+        catch (IOException e){
             e.printStackTrace();
         }
         return string;
     }
 
+
     /**
+     * <b>Deprecated version of the readStrign(InputStream, int) method</b>
      * <b>Reads a <code>String</code> value from keyboard with the maximum length set by <code>length</code>
      * parameter.</b><br>
      * If the entered line is longer than <code>length</code> then it's truncated.
+     * @deprecated
      * @param length <code>int</code> number with the max length of the returned string.
      * @return <code>String</code> with the read value, truncated to <code>length</code> if longer.
+     * @since v1.0.0
+     * @see #readString(InputStream, int)
      */
+    @Deprecated
     public static String readString(int length){
         String string = "";
         BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));

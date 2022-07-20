@@ -5,7 +5,7 @@
 
     <groupId>dev.xarlsr.utilities</groupId>
     <artifactId>xarlsr-utilities</artifactId>
-    <version>2.3.6</version>
+    <version>2.3.7-SNAPSHOT</version>
 
     <name>xarlsr-utilities</name>
     <description>Utilities module to help the developer to get some inputs from the console

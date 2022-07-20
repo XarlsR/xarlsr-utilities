@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.6">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/Passed.java" afterDir="false" />
+    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/ConsoleInputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -64,7 +63,6 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -72,7 +70,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -97,7 +95,39 @@
       <command value="mvn javadoc:jar" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DateUtilsTest">
+  <component name="RunManager" selected="JUnit.ConsoleInputTest.ReadStringMaxLengthTest">
+    <configuration name="ConsoleInputTest.ReadStringMaxLengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.ConsoleInputTest" />
+      <option name="METHOD_NAME" value="ReadStringMaxLengthTest(java.lang.String,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleInputTest.readStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.ConsoleInputTest" />
+      <option name="METHOD_NAME" value="readStringTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DateUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xarlsr-utilities" />
       <extension name="coverage">
@@ -145,45 +175,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateUtilsTest.dateFormatChangerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xarlsr-utilities" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
-      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
-      <option name="METHOD_NAME" value="dateFormatChangerTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DateUtilsTest.dateFormatChangerWRONGTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xarlsr-utilities" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
-      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
-      <option name="METHOD_NAME" value="dateFormatChangerWRONGTestCase(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConsoleInputTest.ReadStringMaxLengthTest" />
+        <item itemvalue="JUnit.ConsoleInputTest.readStringTest" />
+        <item itemvalue="JUnit.DateUtilsTest.dateFormatChangerOKTestCase" />
         <item itemvalue="JUnit.DateUtilsTest" />
         <item itemvalue="JUnit.DateUtilsTest.dateFormatChangerExceptionTestCase" />
-        <item itemvalue="JUnit.DateUtilsTest.dateFormatChangerWRONGTestCase" />
-        <item itemvalue="JUnit.DateUtilsTest.dateFormatChangerOKTestCase" />
-        <item itemvalue="JUnit.DateUtilsTest.dateFormatChangerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658035411384</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Version 2.3.6&#10;- dateFormatChanger() updated to throws a generic Exception.&#10;- isValidDate recoded to eliminate the throwed exception.&#10;- Several Tests modified.&#10;- @Passed annotation created to label the test methods.">
+      <created>1658175132743</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658175132743</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Version 2.3.6&#10;- dateFormatChanger() updated to throws a generic Exception.&#10;- isValidDate recoded to eliminate the throwed exception.&#10;- Several Tests modified.&#10;- @Passed annotation created to label the test methods.">
+      <created>1658175192601</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658175192601</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +287,28 @@
     <MESSAGE value="Version 2.3.3&#10;Re-fixed isValidDate() method at DateUtils class.&#10;stringToDate() method modified, deleting the outputFormat parameter and throwing a DateTimeParse exception." />
     <MESSAGE value="Version 2.3.4&#10;Modified generateRandomDate(). The ending date is now exclusive." />
     <MESSAGE value="Version 2.3.5&#10;- Documentation project started.&#10;- Javadoc annotations completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.5&#10;- Documentation project started.&#10;- Javadoc annotations completed." />
+    <MESSAGE value="Version 2.3.6&#10;- dateFormatChanger() updated to throws a generic Exception.&#10;- Several Tests modified.&#10;- @Passed annotation created to label the test methods." />
+    <MESSAGE value="Version 2.3.6&#10;- dateFormatChanger() updated to throws a generic Exception.&#10;- isValidDate recoded to eliminate the throwed exception.&#10;- Several Tests modified.&#10;- @Passed annotation created to label the test methods." />
+    <MESSAGE value="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/xarlsr_utilities$DateUtilsTest_dateFormatChangerExceptionTestCase.ic" NAME="DateUtilsTest.dateFormatChangerExceptionTestCase Coverage Results" MODIFIED="1658172598481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dev.xarlsr.utilities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/xarlsr_utilities$DateUtilsTest.ic" NAME="DateUtilsTest Coverage Results" MODIFIED="1658172633635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dev.xarlsr.utilities.*</FILTER>
+    </SUITE>
   </component>
 </project>

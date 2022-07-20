@@ -31,7 +31,8 @@ public class DateUtilsTest {
             // Correct dates and matching formats
             "20100131, yyyyMMdd, dd/MM/yyyy, 31/01/2010",
             "31/01/2010, dd/MM/yyyy, dd-MM-yyyy, 31-01-2010",
-            "29/02/16, dd/MM/yy, yyyy.MM.dd, 2016.02.29"
+            "29/02/16, dd/MM/yy, yyyy.MM.dd, 2016.02.29",
+            "25/04/2014,,,20140425"
     })
     void dateFormatChangerOKTestCase(String dateI, String formatI, String formatO, String expectedResult){
         try {
@@ -41,7 +42,7 @@ public class DateUtilsTest {
             assertTrue(GenericValidator.isDate(result, formatO, true), "TT OK");
             System.out.println(" isDate: [OK]");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("Input and/or output format null. Default applied.");
         }
     }
 
@@ -102,9 +103,14 @@ public class DateUtilsTest {
     }
 
 
-
     /**
-     * Test the dateToString(LocalDate) method
+     * <b>Test the dateToString(LocalDate) method</b><br>
+     * Gets the actual date from the system and passes it to the tested method.
+     * Test is passed if the returned {@code String} is a valid date in format 'yyyyMMdd', using the
+     * <code>GenericValidator.isDate()</code> method from apache-commons-validator artifact.
+     * @see DateUtils#dateToString(LocalDate)
+     * @see <a href="https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/GenericValidator.html">Apache Commons Generic Validator</a>
+     * @since v2.3.6
      */
     @Test
     void dateToStringTest(){
@@ -114,8 +120,16 @@ public class DateUtilsTest {
     }
 
     /**
-     * Test the dateToString(LocalDate, String) method
+     * <b>Test the dateToString(LocalDate, String) method</b><br>
+     * Gets the actual date from the systems and passes it to the tested method.
+     * Test is passes if the returned {@code String} is a valid date in the user
+     * defined format passed to the method. Validity check is performed by the
+     * <code>GenericValidator.isDate()</code> method from apache-commons-validator artifact.
+     * @since v2.3.6
+     * @see DateUtils#dateToString(LocalDate, String)
+     * @see <a href="https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/GenericValidator.html">Apache Commons Generic Validator</a>
      */
+
     @Test
     void dateToStringParamsTest(){
         LocalDate ld1 = LocalDate.now();
