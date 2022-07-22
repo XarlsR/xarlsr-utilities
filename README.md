@@ -13,10 +13,10 @@ Implements two classes with specific methods for each purpose:
 
 #### ConsoleInput class
 
-A class containing the methods to get several types of data from the console:
-**********  PONER QUE TODOS LOS METODOS LEEN VIA INPUTSTREAM Y SUS VENTAJAS ***************
+A class containing the methods to get several types of data from a InputStream:
 
-- `readChar()`: Reads a char from console and returns it, verifying it's a valid char.
+
+- `readChar(InputStream)`: Reads a char from console and returns it, verifying it's a valid char.
 
 
 - `readString(InputStream)`: Reads a String line from a selected InputStream. 
@@ -31,13 +31,13 @@ A class containing the methods to get several types of data from the console:
 - `readString(InputStream, int)`: Same as `readString(InputStream)` method but it returns a `String` with the maximum length of `int`, truncating the rest if the entered line is longer.
 
 
-- `readInteger()`: Reads a line from console, checks if its a number, parses it to `int` and returns it.
+- `readInteger(InputStream)`: Reads a line from console, checks if its a number, parses it to `int` and returns it.
 
 
-- `readInteger(int)`: Same as `readInteger()`, but it truncates the integer to the max length set by `int`.
+- `readInteger(InputeStream, int)`: Same as `readInteger()`, but it truncates the integer to the max length set by `int`.
 
 
-- `readDouble()`: Reads a line from console, check if it's a valid number and returns a `Double` value.
+- `readDouble(InputStream)`: Reads a line from console, check if it's a valid number and returns a `Double` value.
 
 
 - `pressEnter()`: Ask the user to press ENTER key to continue.
