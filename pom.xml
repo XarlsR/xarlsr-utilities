@@ -5,7 +5,7 @@
 
     <groupId>dev.xarlsr.utilities</groupId>
     <artifactId>xarlsr-utilities</artifactId>
-    <version>2.3.7-SNAPSHOT</version>
+    <version>3.0.0</version>
 
     <name>xarlsr-utilities</name>
     <description>Utilities module to help the developer to get some inputs from the console
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.8.0-M1</version>
+            <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
 

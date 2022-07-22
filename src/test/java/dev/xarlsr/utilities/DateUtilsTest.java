@@ -119,6 +119,7 @@ public class DateUtilsTest {
         assertTrue(GenericValidator.isDate(dts1, "yyyyMMdd", true));
     }
 
+
     /**
      * <b>Test the dateToString(LocalDate, String) method</b><br>
      * Gets the actual date from the systems and passes it to the tested method.
@@ -137,12 +138,14 @@ public class DateUtilsTest {
         assertTrue(GenericValidator.isDate(dts1, "dd/MM/yyyy", true));
     }
 
+
     /**
      * Test the stringToDate(String date, String format) method.
      */
     @Test
     void stringToDateParamsTest(){
     }
+
 
     /**
      * Test the stringToDate(String date) method
@@ -172,6 +175,7 @@ public class DateUtilsTest {
 
     }
 
+
     /**
      * Test the isValidDate() method
      */
@@ -195,6 +199,7 @@ public class DateUtilsTest {
         assertFalse(DateUtils.isValidDate(wDate3));
 
     }
+
 
     /**
      * <b>Test the generateRandomDate() method</b><br>

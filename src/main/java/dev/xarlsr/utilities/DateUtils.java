@@ -9,7 +9,6 @@
  */
 package dev.xarlsr.utilities;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -73,7 +72,8 @@ public class DateUtils {
 		}
 		return LocalDate.parse("19000101", errdtf);
 	}
-	
+
+
 	/**
 	 * <b>Converts a String representing a date in an object LocalDate containing that date.</b><br>
 	 * The entered date must be in the predefined <code>BASIC_ISO_DATE</code> (yyyyMMdd) format.
@@ -93,6 +93,7 @@ public class DateUtils {
 		return LocalDate.parse("19000101", dtf);
 	}
 
+
 	/** <b>Converts a <code>LocalDate</code> date object in a <code>String</code> object with custom format,
 	 * passed as second parameter.</b><br>
 	 * @param localDate <code>LocalDate</code> to be converted.
@@ -106,6 +107,7 @@ public class DateUtils {
 		return localDate.format(formatter);
 	}
 
+
 	/** <b>Converts a <code>LocalDate</code> date object in a <code>String</code> object with the format 'yyyyMMdd'.</b><br>
 	 * @param localDate <code>LocalDate</code> to be converted.
 	 * @return <code>String</code> with the localDate object formatted.
@@ -117,6 +119,7 @@ public class DateUtils {
 		DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE;
 		return localDate.format(formatter);
 	}
+
 
 	/**
 	 * <b>Converts a String representing a date from a format to other.</b><br>
@@ -144,6 +147,7 @@ public class DateUtils {
 		return outputDate;
 	}
 
+
 	/**
 	 * <b>Checks if a <code>String</code> representing a date is valid or not.</b><br>
 	 * @param strDate <code>String</code> representing the date to check.
@@ -163,6 +167,7 @@ public class DateUtils {
 			return false;
 		}
 	}
+
 
 	/**
 	 * <b>Generates a random date between two user selected dates.</b><br>

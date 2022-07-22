@@ -4,11 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/ConsoleInputTest.java" afterDir="false" />
+    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.9.9-SNAPSHOT&#10;- Improved tests javadoc annotations.&#10;- ConsoleInput.readString() and ConsoleInput.readString(int) deprecated. &#10;- New methods ConsoleInput.readString(InputStream) and readString(InputStream, int) released and documented to replace prior methods.&#10;- Unit tests for these new methods implemented.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/css/coverage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/css/highlight-idea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/img/arrowDown.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/img/arrowUp.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/js/highlight.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_BLOCK.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_CLASS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_LINE.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_LINE_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_METHOD.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_NAME_DESC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/sources/source-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/sources/source-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/ns-1/sources/source-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/ConsoleInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/ConsoleInputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +52,16 @@
       <option value="module" />
     </option>
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Java\Proyectos\Utilidades\xarlsr-utilities\src\site" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,10 +72,38 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Test-for" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1658494163" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="Test-for" />
+                    <option name="lastUsedInstant" value="1658494091" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -70,7 +134,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -95,8 +159,8 @@
       <command value="mvn javadoc:jar" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConsoleInputTest.ReadStringMaxLengthTest">
-    <configuration name="ConsoleInputTest.ReadStringMaxLengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DateUtilsTest">
+    <configuration name="ConsoleInputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xarlsr-utilities" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +170,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
       <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.ConsoleInputTest" />
-      <option name="METHOD_NAME" value="ReadStringMaxLengthTest(java.lang.String,int)" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleInputTest.readDoubleExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.ConsoleInputTest" />
+      <option name="METHOD_NAME" value="readDoubleExceptionTest(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsoleInputTest.readStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsoleInputTest.readDoubleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xarlsr-utilities" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +201,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
       <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.ConsoleInputTest" />
-      <option name="METHOD_NAME" value="readStringTest(java.lang.String)" />
+      <option name="METHOD_NAME" value="readDoubleTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleInputTest.readIntegerWrongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xarlsr-utilities" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
+      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.ConsoleInputTest" />
+      <option name="METHOD_NAME" value="readIntegerWrongTest(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,56 +238,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateUtilsTest.dateFormatChangerExceptionTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xarlsr-utilities" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
-      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
-      <option name="METHOD_NAME" value="dateFormatChangerExceptionTestCase(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DateUtilsTest.dateFormatChangerOKTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xarlsr-utilities" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.xarlsr.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.xarlsr.utilities" />
-      <option name="MAIN_CLASS_NAME" value="dev.xarlsr.utilities.DateUtilsTest" />
-      <option name="METHOD_NAME" value="dateFormatChangerOKTestCase(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConsoleInputTest.ReadStringMaxLengthTest" />
-        <item itemvalue="JUnit.ConsoleInputTest.readStringTest" />
-        <item itemvalue="JUnit.DateUtilsTest.dateFormatChangerOKTestCase" />
         <item itemvalue="JUnit.DateUtilsTest" />
-        <item itemvalue="JUnit.DateUtilsTest.dateFormatChangerExceptionTestCase" />
+        <item itemvalue="JUnit.ConsoleInputTest" />
+        <item itemvalue="JUnit.ConsoleInputTest.readDoubleExceptionTest" />
+        <item itemvalue="JUnit.ConsoleInputTest.readDoubleTest" />
+        <item itemvalue="JUnit.ConsoleInputTest.readIntegerWrongTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <branch name="master" repository="C:\Java\Proyectos\Utilidades\xarlsr-utilities" />
       <changelist id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="" />
       <created>1656435322913</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1656435322913</updated>
+      <updated>1658494161605</updated>
     </task>
     <task id="LOCAL-00001" summary="Version 2.2.0&#10;Añadida generación de fechas aleatorias en DateUtils">
       <created>1656611627628</created>
@@ -264,7 +328,24 @@
       <option name="project" value="LOCAL" />
       <updated>1658175192601</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations.&#10;- ConsoleInput.readString() and ConsoleInput.readString(int) deprecated. &#10;- New methods ConsoleInput.readString(InputStream) and readString(InputStream, int) released and documented to replace prior methods.&#10;- Unit tests for these new methods implemented.">
+      <created>1658335044720</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658335044720</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Test for readDouble(InputStream)">
+      <branch name="master" repository="C:\Java\Proyectos\Utilidades\xarlsr-utilities" original="true" />
+      <branch name="Test-for" repository="C:\Java\Proyectos\Utilidades\xarlsr-utilities" />
+      <changelist id="" name="Test for readDouble(InputStream)" comment="" />
+      <created>1658494047085</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658494161605</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,24 +371,17 @@
     <MESSAGE value="Version 2.3.6&#10;- dateFormatChanger() updated to throws a generic Exception.&#10;- Several Tests modified.&#10;- @Passed annotation created to label the test methods." />
     <MESSAGE value="Version 2.3.6&#10;- dateFormatChanger() updated to throws a generic Exception.&#10;- isValidDate recoded to eliminate the throwed exception.&#10;- Several Tests modified.&#10;- @Passed annotation created to label the test methods." />
     <MESSAGE value="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations.&#10;- ConsoleInput.readString() and ConsoleInput.readString(int) deprecated. &#10;- New methods ConsoleInput.readString(InputStream) and readString(InputStream, int) released and documented to replace prior methods.&#10;- Unit tests for these new methods implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 2.3.7-SNAPSHOT&#10;- Improved tests javadoc annotations.&#10;- ConsoleInput.readString() and ConsoleInput.readString(int) deprecated. &#10;- New methods ConsoleInput.readString(InputStream) and readString(InputStream, int) released and documented to replace prior methods.&#10;- Unit tests for these new methods implemented." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/xarlsr_utilities$DateUtilsTest_dateFormatChangerExceptionTestCase.ic" NAME="DateUtilsTest.dateFormatChangerExceptionTestCase Coverage Results" MODIFIED="1658172598481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dev.xarlsr.utilities.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/xarlsr_utilities$DateUtilsTest.ic" NAME="DateUtilsTest Coverage Results" MODIFIED="1658172633635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/xarlsr_utilities$ConsoleInputTest.ic" NAME="ConsoleInputTest Coverage Results" MODIFIED="1658497229254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dev.xarlsr.utilities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/xarlsr_utilities$DateUtilsTest.ic" NAME="DateUtilsTest Coverage Results" MODIFIED="1658497252671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dev.xarlsr.utilities.*</FILTER>
     </SUITE>
   </component>
