@@ -1,8 +1,9 @@
 # xarlsr-utilities
+[![Latest release](https://img.shields.io/badge/release-3.0.0-blue)](https://github.com/XarlsR/xarlsr-utilities/releases/tag/v3.0.0) [![Latest release](https://img.shields.io/badge/package-3.0.0-red)](https://github.com/XarlsR/xarlsr-utilities/packages/1554183)
 
 ### Overview
 
-**xarls-utilities** is a small toolkit to help developers with the tasks of getting user's inputs from console and with the handling of dates.
+**xarls-utilities** is a small toolkit to help developers with the tasks of getting user's inputs from console or any other `InputStream` object, and with the handling of dates in java programming.
 
 Implements two classes with specific methods for each purpose:
 
@@ -13,22 +14,23 @@ Implements two classes with specific methods for each purpose:
 
 #### ConsoleInput class
 
-A class containing the methods to get several types of data from a InputStream:
+A class containing the methods to get several types of data from a InputStream.
+
+If a reading from keyboard is the desired input, the default System.in must be passed as parameter or, as an option, the caller class or method should be the responsible to set the InputStream to default System.in. 
+
+In  case other InputStram is desired as source, any of the `InputStream` classes of the `InputStream` superclass can be used.
+
+Available methods:
+
+- `readString(InputStream)`: Reads a String line from a selected InputStream and returns the result.
+
+This is the base method for reading the input data from the InputStream. Every other method reads the data via `readString(InputStream)` and then parse them
+to de desired output type.
+
+- `readString(InputStream, int)`: Same as `readString(InputStream)` method but it returns a `String` with the maximum length of `int`, truncating the rest if the entered line is longer.
 
 
 - `readChar(InputStream)`: Reads a char from console and returns it, verifying it's a valid char.
-
-
-- `readString(InputStream)`: Reads a String line from a selected InputStream. 
-
-  If a reading from keyboard is the desired input, the default System.in must be passed as parameter or, as an option, the caller class or method may be the responsible to set the InputStream to default System.in. 
-
-  In  case other InputStram is desired as source, any of the InputStram classes of the InputStream superclass can be used.
-
-  See javadoc of the method for more info.   
-
-
-- `readString(InputStream, int)`: Same as `readString(InputStream)` method but it returns a `String` with the maximum length of `int`, truncating the rest if the entered line is longer.
 
 
 - `readInteger(InputStream)`: Reads a line from console, checks if its a number, parses it to `int` and returns it.
@@ -44,7 +46,7 @@ A class containing the methods to get several types of data from a InputStream:
 
 
   There is another method that does not get any data from console nor returns anything, but it's a helpful method when console needs to be cleared:
-- `clearConsole()`: Clears the console.
+- `clearConsole()`: Clears the console in Windows systems.
 
 #### DateUtils class
 
