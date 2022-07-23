@@ -4,43 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 2.9.9-SNAPSHOT&#10;- Improved tests javadoc annotations.&#10;- ConsoleInput.readString() and ConsoleInput.readString(int) deprecated. &#10;- New methods ConsoleInput.readString(InputStream) and readString(InputStream, int) released and documented to replace prior methods.&#10;- Unit tests for these new methods implemented.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/css/coverage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/css/highlight-idea.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/img/arrowDown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/img/arrowUp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/js/highlight.pack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_BLOCK.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_BLOCK_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_CLASS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_CLASS_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_LINE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_LINE_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_METHOD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_METHOD_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/index_SORT_BY_NAME_DESC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/sources/source-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/sources/source-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/ns-1/sources/source-3.html" afterDir="false" />
+    <list default="true" id="3f8c9272-9265-476e-87b9-593a394f42ea" name="Changes" comment="Version 3.0.0&#10;- New ConsoleInput methods added to support the entry of data via InputStream. Old methods marked as @deprecated in order to remain them available for apps using older version of the artifact.&#10;- All methods (excluded @deprecated) documented and tested.">
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/ConsoleInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/xarlsr/utilities/DateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/ConsoleInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/ConsoleInputTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/xarlsr/utilities/DateUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,11 +119,11 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn javadoc:javadoc" />
       <command value="mvn javadoc:aggregate-jar" />
       <command value="mvn install:install-file" />
       <command value="mvn install:install C:\Java\Proyectos\Utilidades\xarlsr-utilidades-2.0.0\target\xarlsr-utilidades-2.1.0-javadoc.jar" />
       <command value="mvn javadoc:jar" />
+      <command value="mvn javadoc:javadoc" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.DateUtilsTest">
@@ -338,7 +305,6 @@
     <task id="LOCAL-00012" summary="Test for readDouble(InputStream)">
       <branch name="master" repository="C:\Java\Proyectos\Utilidades\xarlsr-utilities" original="true" />
       <branch name="Test-for" repository="C:\Java\Proyectos\Utilidades\xarlsr-utilities" />
-      <changelist id="" name="Test for readDouble(InputStream)" comment="" />
       <created>1658494047085</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />

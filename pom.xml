@@ -8,8 +8,8 @@
     <version>3.0.0</version>
 
     <name>xarlsr-utilities</name>
-    <description>Utilities module to help the developer to get some inputs from the console
-    (keyboard) and to handle dates.</description>
+    <description>xarls-utilities is a toolkit to help developers to easily get input data
+    from a InputStream and to handle dates in Java developing.</description>
     <url>https://github.com/XarlsR/xarlsr-utilities.git</url>
 
     <properties>
@@ -52,6 +52,13 @@
 
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub XarlsR Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/XarlsR/xarlsr-utilities</url>
+        </repository>
+    </distributionManagement>
 
     <reporting>
         <plugins>
@@ -65,6 +72,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.3.0</version>
+                <configuration>
+                    <stylesheetfile>C:\Java\Repositorio_Local\Plantillas_CSS\dracula-javadoc8.css</stylesheetfile>
+                </configuration>
             </plugin>
 
             <plugin>
@@ -120,6 +130,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.3.0</version>
+                <configuration>
+                    <stylesheetfile>C:\Java\Repositorio_Local\Plantillas_CSS\dracula-javadoc8.css</stylesheetfile>
+                </configuration>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
