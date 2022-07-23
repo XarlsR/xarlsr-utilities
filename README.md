@@ -1,5 +1,5 @@
 # xarlsr-utilities
-[![Latest release](https://img.shields.io/badge/release-3.0.0-blue)]()
+[![Latest release](https://img.shields.io/badge/release-3.0.0-blue)](https://github.com/XarlsR/xarlsr-utilities/releases/tag/v3.0.0)
 
 ### Overview
 
