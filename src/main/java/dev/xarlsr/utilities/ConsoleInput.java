@@ -59,7 +59,10 @@ public class ConsoleInput {
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
             String string = (br.readLine());
-            inputStream.close();
+            // ISSUE I001: Avoids to close System.in as it can´t be used anymore after closing.
+            if (inputStream != System.in) {
+                inputStream.close();
+            }
             return string;
         } catch (IOException e) {
             e.printStackTrace();

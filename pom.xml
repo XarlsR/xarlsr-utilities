@@ -5,7 +5,7 @@
 
     <groupId>dev.xarlsr.utilities</groupId>
     <artifactId>xarlsr-utilities</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
 
     <name>xarlsr-utilities</name>
     <description>xarls-utilities is a toolkit to help developers to easily get input data
